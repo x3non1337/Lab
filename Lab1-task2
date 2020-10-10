@@ -17,7 +17,7 @@ int is_simple(long int number)
 
 	else
 	{
-		printf("The number you entered is neither composite nor simple \n");
+		printf("The_number_you_entered_is_neither_composite_nor_simple \n");
 	}
 
 	return 0;
@@ -26,7 +26,7 @@ void main()
 {
 	long int number;
 
-	printf("Enter the number: ");
+	printf("Enter_the_number: ");
 
 	scanf("%li", &number);
 
