@@ -1,30 +1,25 @@
-#include<stdio.h>
-#include<math.h>
-double get_power(double x, long y)
+#include <stdio.h>
+#include <conio.h>
+#include <math.h>
+
+int get_power(int number, int power)
 {
-if (y == 0) 
-{
-  return 1;
-}
-if (y < 0) 
-{
-  return get_power(1.0 / x, -y);
-}
-return x * get_power(x, y - 1);
-
-}
-
-int main()
-{
-double x;
-
-long y;
-
-while (scanf("%lf %ld", &x, &y) == 2)
-
-{
-
-printf("%lf\n", get_power(x, y));
+  int result = 1;
+  for(int i = 0; i < power; i++)
+  {
+    result *=  number;
+  }
+  
+  return result;
 }
 
+int main(void) 
+{
+  int number;
+  int power;
+  printf("enter_a_number: ");
+  scanf("%d", &number);
+  printf("enter_the_degree: ");
+  scanf("%d", &power);
+  printf("%d", get_power(number, power));
 }
