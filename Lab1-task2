@@ -1,6 +1,6 @@
 #include <stdio.h>
 
-int is_simple(int number) 
+int is_simple(long int number) 
 {
   if (number > 1)
   {
@@ -10,22 +10,27 @@ int is_simple(int number)
       {
         return 0;
       }
-      
-      return 1;
+
+    return 1;
+
     }
   }
+
   else
   {
-    printf("the_number_you_entered_is_neither_composite_nor_simple. \n");
+    printf("the_number_you_entered_is_neither_composite_nor_simple.\n");
   }
-  
-  return 0;
+
+return 0;
+
 }
 
-int main()
+int main(void)
 {
   long int number;
+
   printf("enter_the_number: ");
   scanf("%li", &number);
+
   printf("%d", is_simple(number));
 }
