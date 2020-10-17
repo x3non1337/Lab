@@ -1,6 +1,6 @@
 #include <stdio.h>
 
-int is_simple(long int number) 
+int is_simple(int number) 
 {
   if (number > 1)
   {
@@ -22,7 +22,7 @@ int is_simple(long int number)
   return 0;
 }
 
-int main(void)
+int main()
 {
   long int number;
   printf("enter_the_number: ");
